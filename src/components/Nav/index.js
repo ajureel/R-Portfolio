@@ -21,10 +21,14 @@ function Nav(props) {
 
   return (
     <header style={{ height: "150px", backgroundImage: `url(${Background})` }}>
-        <h1>
-          <a href="" >
+        <h1 onClick={() => {
+                  setCurrentCategory({
+                    name: "about me",
+                    description:
+                      "Get to know me"
+                  })
+                }} >
             AJ Ureel
-          </a>
         </h1>
         <nav >
           <ul className="flex-row" >

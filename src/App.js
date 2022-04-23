@@ -2,6 +2,7 @@ import React, { useState }  from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Contact from './components/contact';
 
 
 function App() {
@@ -31,9 +32,10 @@ function App() {
         >
       </Nav>
       <main>
-        <About></About>
+        { currentCategory.name === 'about me' && <About></About>}
         {/* <Portfolio  currentCategory={currentCategory}></Portfolio> */}
         <Portfolio currentCategory={currentCategory}></Portfolio>
+        { currentCategory.name === 'contact me' && <Contact></Contact>}
       </main>
     </div>
   );
