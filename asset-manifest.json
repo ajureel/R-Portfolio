@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/R-Portfolio/static/css/main.8832ea63.css",
+    "main.js": "/R-Portfolio/static/js/main.3c18b822.js",
+    "static/js/787.eebebf2d.chunk.js": "/R-Portfolio/static/js/787.eebebf2d.chunk.js",
+    "static/media/1.png": "/R-Portfolio/static/media/1.cf5bc5f6d57dd7d307c1.png",
+    "static/media/2.png": "/R-Portfolio/static/media/2.3dd3e25523851e388b01.png",
+    "static/media/3.png": "/R-Portfolio/static/media/3.39d4a0485adce0d07a3a.png",
+    "static/media/Horiseon.png": "/R-Portfolio/static/media/Horiseon.39d4a0485adce0d07a3a.png",
+    "static/media/kayaksuperior.png": "/R-Portfolio/static/media/kayaksuperior.d2fdcf4ba6532cda5d24.png",
+    "static/media/0.png": "/R-Portfolio/static/media/0.ce6711831e3ad21e7251.png",
+    "static/media/CryptoNowNFTs.png": "/R-Portfolio/static/media/CryptoNowNFTs.ce6711831e3ad21e7251.png",
+    "static/media/sunrise-h200.jpg": "/R-Portfolio/static/media/sunrise-h200.5d0c314748dcee48776c.jpg",
+    "static/media/OverTheEdge.png": "/R-Portfolio/static/media/OverTheEdge.ea04a44ac679005f4280.png",
+    "static/media/robot-icon-4.png": "/R-Portfolio/static/media/robot-icon-4.594ca204c0a6778f5a03.png",
+    "index.html": "/R-Portfolio/index.html",
+    "main.8832ea63.css.map": "/R-Portfolio/static/css/main.8832ea63.css.map",
+    "main.3c18b822.js.map": "/R-Portfolio/static/js/main.3c18b822.js.map",
+    "787.eebebf2d.chunk.js.map": "/R-Portfolio/static/js/787.eebebf2d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8832ea63.css",
+    "static/js/main.3c18b822.js"
+  ]
+}
