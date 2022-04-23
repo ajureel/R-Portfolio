@@ -1,6 +1,64 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import Background from '../../assets/images/sunrise-h200.jpg';
 
+function Nav() {
+
+  const categories = [
+    {
+      name: "about me",
+      description:
+        "Get to know me",
+    },
+    { name: "my portfolio", description: "Some of the projects I've done" },
+    { name: "contact me", description: "How to connect with me" },
+    {
+      name: "resume",
+      description: "Experience and skills",
+    },
+  ];
+
+  function categorySelected(name) {
+    console.log(`${name} clicked`)
+  }
+
+  return (
+    <header style={{ height: "150px", backgroundImage: `url(${Background})` }}>
+        <h1>
+          <a href="" >
+            AJ Ureel
+          </a>
+        </h1>
+        <nav >
+          <ul className="flex-row" >
+            {/* <li className="mx-2">
+              <a href="#about">
+                About me
+              </a>
+            </li>
+            <li>
+              <span>Contact</span>
+            </li> */}
+            {categories.map((category) => (
+              <li
+                className="mx-1"
+                key={category.name}
+              >
+                <span onClick={() => categorySelected(category.name)} >
+                  {category.name}
+                </span>
+              </li>
+              
+            ))}
+          </ul>
+        </nav>
+    </header>
+      
+  );
+}
+
+export default Nav;
+/*
 function Nav(props) {
   const {
     categories = [],
@@ -55,3 +113,4 @@ function Nav(props) {
 }
 
 export default Nav;
+*/
