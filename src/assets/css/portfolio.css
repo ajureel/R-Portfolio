@@ -1,0 +1,217 @@
+/**** Set global box size and padding ****/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/**** Variables for colors ****/
+:root {
+    --title-text-color: #fff073; 
+    --hero-text-color:  #673b56;
+    --main-bg-color: #673b56;
+    --2nd-bg-color: #fc7d52;
+    --main-border-color: #fc7d52;;
+    --2nd-border-color: #fff073; 
+  }
+
+/* Set the main background color  */
+body {
+    background-color: var(--main-bg-color);
+}
+
+/* Set element attributes */
+h2 {
+    letter-spacing: 2px;
+    font-family: 'Comic Sans MT','Brush Script MT',  Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    color: #fff073;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color:lightgoldenrodyellow;
+}
+
+/**** Header Section ****/
+.header {
+    padding-top: 4px;
+    padding-bottom: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--title-text-color);
+}
+
+.header h1 {
+    padding-left: 40px;
+    padding-right: 10px;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: var(--2nd-bg-color);
+    font-family: 'Comic Sans MT','Brush Script MT',  Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* my-links contains the menu and footer/contact me links which is an unordered list */
+.my-links {
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.my-links ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.my-links ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: var(--main-border-color);
+} 
+
+/*** HERO!!!!! ***/
+.hero {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 25px;
+    background-image: url("../images/sunrise-h200.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.hero #sub-title {
+    color: var(--hero-text-color);
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.hero img {
+    /*position: relative;
+    top: 50px;*/
+    /*float: right;*/
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Main body is below the Hero section */
+.main-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* each section of content is a row that has a title and a content container */
+ .page-row{
+    display: flex;
+    margin-bottom: 10px;
+ } 
+
+.section-title {
+    color: var(--title-text-color);
+    width:10%;
+    border-right: var(--main-border-color);
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-width: 3px;
+    border-style: none solid none none;
+    text-align: right;
+    padding-right: 10px ;
+    font-size: 20px;
+}
+
+.content-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+/* Work Examples are flexed within the content-container */
+.primary-example {    
+    width: 100%;
+}
+
+.example-title-box {  
+    display: inline-flexbox;
+    background-color: var(--2nd-bg-color);
+    width: 200px;
+    position:relative; 
+    top: -50px;
+    padding-left: 10px;
+}
+
+/* more-work enables the additional examples to wrap */
+.more-work {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    /* align-content: center; */
+    /* align-items: center;     */
+}
+
+.additional-example {    
+    /* width: 50%;  */
+    
+}
+
+.additional-example img {    
+    width: 400px;
+}
+
+.my-pic:hover {
+    background-color: var(--2nd-border-color);
+    opacity:0.5;
+    border-radius:30px;
+}
+
+/***Footer Styles***/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .page-row, .more-work {   
+      flex-direction: column;
+    }
+
+    .header, .my-links ul li {
+        flex-direction: column;
+        display: flex; 
+    }
+
+    .section-title {
+        width: 103px;
+    }   
+    
+    .additional-example img {    
+        width: 300px;
+    }
+    
+  }
